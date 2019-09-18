@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    --primary-color: #6c4e8a;
+
+    --bg-color-bright: #ffffff;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: #f0f0f0;
+    font-size: 1rem; 
+    margin: 0;
+}
+app-root {
+    height: 100%;
+}
