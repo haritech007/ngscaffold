@@ -3,36 +3,6 @@
 <main class="page-container">
   <app-side-bar></app-side-bar>
   <div class="view-area">
-    <div class="container">
-      <div class="todo-container">
-        <h1 class="title">{{title}}</h1>
-        <div class="input-group">
-          <input #todoInput type="text" (keyup.enter)="addTodo(todoInput)" placeholder="Enter your todos" class="input-field"/>
-          <button (click)="addTodo(todoInput)" class="button">+ Add</button>
-        </div>
-        <ul class="todo-items">
-          <li *ngFor="let todo of todosList; index as i">
-            <span>{{todo}}</span><a (click)="removeTodo(i)">&times;</a>
-          </li>
-        </ul>
-        <div class="footer">Total Items: {{todosList.length}}</div>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </main>
-<!-- <div class="container">
-  <div class="todo-container">
-    <h1 class="title">{{title}}</h1>
-    <div class="input-group">
-      <input #todoInput type="text" (keyup.enter)="addTodo(todoInput)" placeholder="Enter your todos" class="input-field"/>
-      <button (click)="addTodo(todoInput)" class="button">+ Add</button>
-    </div>
-    <ul class="todo-items">
-      <li *ngFor="let todo of todosList; index as i">
-        <span>{{todo}}</span><a (click)="removeTodo(i)">&times;</a>
-      </li>
-    </ul>
-    <div class="footer">Total Items: {{todosList.length}}</div>
-  </div>
-</div> -->
-<!-- <router-outlet></router-outlet> -->

@@ -1,0 +1,73 @@
+.todo-container {
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1px #e1e1e1 solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    position: relative;
+}
+.todo-container::after {
+    content: "";
+    background: white;
+    position: absolute;
+    top: 100%;
+    width: 95%;
+    height: 5px;
+    border: 1px #e1e1e1 solid;
+    left: 2.5%;
+}
+.todo-container .title {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+}
+.todo-container .input-group {
+    display: flex;
+    flex-direction: row;
+}
+.todo-container .input-field {
+    width: 100%;
+    border: 1px #e1e1e1 solid;
+    height: 47px;
+    padding: 15px;
+    font-size: 1rem;
+    flex: 1;
+}
+.todo-container .button {
+    height: 47px;
+    width: 100px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0;
+    border: 0;
+}
+.todo-container .todo-items {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+.todo-container .todo-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #242a2a;
+    font-size: 1rem;
+}
+.todo-container .todo-items li:not(:last-child) {
+    border-bottom: 1px #e1e1e1 solid;
+}
+.todo-container .todo-items li span {
+    word-break: break-all;
+    padding-right: 15px;
+}
+.todo-container .todo-items li a {
+    cursor: pointer;
+}
+.todo-container .footer {
+    font-size: 0.7rem;
+    color: #e1e1e1;
+    margin-top: 15px;
+}
